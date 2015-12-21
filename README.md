@@ -9,7 +9,7 @@ Após o download você vai precisar extrair a pasta app aonde seu magento está 
 
 Feito isso, o modulo já está foi instalado com sucesso no seu magento.
 
-Uma ultima configuração que você deverá fazer é ir até o arquivo '/app/code/community/FastShipping/Correios/Model/Carrier/CorreiosMethod.php' na linha 36 e substituir a variável token para o seu token, em caso de dúvidas entre em contato conosco atráves do suporte do nosso site.
+Uma ultima configuração que você deverá fazer é ir até o arquivo ```/app/code/community/FastShipping/Correios/Model/Carrier/CorreiosMethod.php``` na linha 36 e substituir a variável token para o seu token, em caso de dúvidas entre em contato conosco atráves do suporte do nosso site.
 
 # Sugestões 
 
@@ -23,6 +23,8 @@ Faça o pull request envie sua sugestão, faremos a análise e então o merge
 
 Agradecimentos especiais ao Pedro Teixeira, repositorio fortemente inspirado a sua solução dos correios para o magento.
 
+```
 ***Site:*** https://fastshipping.ciawn.com.br
 
 ***E-mail:*** fastshipping@ciawn.com.br
+```
