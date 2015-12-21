@@ -5,6 +5,8 @@ Fast Shipping Magento plugin
 
 Para instalar baixe a versão mais nova do modulo.
 
+https://github.com/FastShipping/fastshipping-magento/archive/v1.0.0.zip
+
 Após o download você vai precisar extrair a pasta app aonde seu magento está instalado para isso é recomendado ter acesso de escrita nas pastas e um backup de segurança.
 
 Feito isso, o modulo já está foi instalado com sucesso no seu magento.
