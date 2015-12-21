@@ -20,6 +20,17 @@ Estamos em constante evolução então qualquer sugestão ou bug que você tiver
 
 Faça o pull request envie sua sugestão, faremos a análise e então o merge
 
+# Screenshots
+
+Carrinho
+![cartshipping](https://cloud.githubusercontent.com/assets/7466894/11922636/98291d36-a77f-11e5-9b8f-f57719fd0322.png)
+
+Painel Magento
+![fastshipping-shippingmethods](https://cloud.githubusercontent.com/assets/7466894/11922637/982ba542-a77f-11e5-9744-1f7bfbfed7df.png)
+
+Rastreamento
+![tracking](https://cloud.githubusercontent.com/assets/7466894/11922638/9833fa94-a77f-11e5-8d3d-e94ba68eae1f.png)
+
 
 Agradecimentos especiais ao Pedro Teixeira, repositorio fortemente inspirado a sua solução dos correios para o magento.
 
