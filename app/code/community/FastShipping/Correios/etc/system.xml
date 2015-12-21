@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <carriers>
+            <groups>
+                <fastshipping_correios translate="label" module="fastshipping_correios">
+                    <label>Plataforma de Fretes - Fast Shipping</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[
+                            <div>
+                                <h3>Informações Importantes</h3>
+                                <p>Fast Shipping [<a href="http://fastshipping.ciawn.com.br" target="_blank">FastShipping</a> ]</p>
+                                <p>Acesse seu Painel [<a target="_blank" href="https://fastshipping.ciawn.com.br/v1/users?token=b3a3ca59438f695561eab489a0a514ff23d775b8ab485994a62916c94e8f73725c8d8b7168153e2e" target="_blank">Meu Painel</a> ]</p>
+                                <br />
+                                <hr />
+                                <br />
+                            </div>
+                        ]]>
+                    </comment>
+                    <fields>
+                        <token_fastshipping translate="label">
+                            <label>Token</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Informe seu token fornecido pela Fast Shipping</comment>
+                        </token_fastshipping>
+                    </fields>
+                </fastshipping_correios>
+            </groups>
+        </carriers>
+    </sections>
+</config>

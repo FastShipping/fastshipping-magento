@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <FastShipping_Correios>
+            <version>1.0.0</version>
+            <depends>
+                <Mage_Shipping/>
+            </depends>
+        </FastShipping_Correios>
+    </modules>
+    <global>
+        <sales>
+            <quote>
+                <item>
+                    <product_attributes>
+                        <volume_altura/>
+                        <volume_comprimento/>
+                        <volume_largura/>
+                        <postmethods/>
+                        <fit_size/>
+                        <posting_days/>
+                    </product_attributes>
+                </item>
+            </quote>
+        </sales>
+        <models>
+            <fastshipping_correios>
+                <class>FastShipping_Correios_Model</class>
+            </fastshipping_correios>
+        </models>
+        <resources>
+            <fastshipping_correios_setup>
+                <setup>
+                    <module>FastShipping_Correios</module>
+                </setup>
+            </fastshipping_correios_setup>
+        </resources>
+        <helpers>
+            <fastshipping_correios>
+                <class>FastShipping_Correios_Helper</class>
+            </fastshipping_correios>
+        </helpers>
+        <sales>
+            <shipping>
+                <carriers>
+                    <fastshipping_correios>
+                        <class>FastShipping_Correios_Model_Carrier_CorreiosMethod</class>
+                    </fastshipping_correios>
+                </carriers>
+            </shipping>
+        </sales>
+        <cache>
+            <types>
+                <fastshipping_correios translate="label,description" module="fastshipping_correios">
+                    <label>FastShipping Plataforma de Fretes</label>
+                    <description>Plataforma de cotação de frete para ecommerces.</description>
+                    <tags>FASTSHIPPING_CORREIOS</tags>
+                </fastshipping_correios>
+            </types>
+        </cache>
+    </global>
+
+    <default>
+        <carriers>
+            <fastshipping_correios>
+                <!-- GENERAL -->
+                <active>1</active>
+                <model>FastShipping_Correios_Model_Carrier_CorreiosMethod</model>
+                <title>Opções</title>
+                <postmethods>40010</postmethods>
+                <soft_errors>009,010,011</soft_errors>
+                <show_soft_errors>0</show_soft_errors>
+                <prazo_entrega>0</prazo_entrega>
+                <check_dimensions>1</check_dimensions>
+                <min_order_value>0</min_order_value>
+                <max_order_value>10000</max_order_value>
+                <handling_fee>0</handling_fee>
+                <ws_timeout>20</ws_timeout>
+
+                <!-- OPTIONS -->
+                <mao_propria>0</mao_propria>
+                <aviso_recebimento>0</aviso_recebimento>
+                <valor_declarado>0</valor_declarado>
+
+                <!-- VOLUME -->
+                <altura_padrao>2</altura_padrao>
+                <comprimento_padrao>16</comprimento_padrao>
+                <largura_padrao>11</largura_padrao>
+                <midsize_min>16</midsize_min>
+
+                <validate>
+                    <serv_40010>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>30</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_40010>
+                    <serv_40096>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>30</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_40096>
+                    <serv_81019>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>15</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_81019>
+                    <serv_41106>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>30</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_41106>
+                    <serv_41068>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>30</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_41068>
+                    <serv_40215>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>10</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_40215>
+                    <serv_40290>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>10</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_40290>
+                    <serv_40045>
+                        <max>
+                            <size>105</size>
+                            <sum>200</sum>
+                            <weight>30</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_40045>
+                    <serv_41300>
+                        <max>
+                            <size>150</size>
+                            <sum>300</sum>
+                            <weight>30</weight>
+                            <volume_weight>125</volume_weight>
+                        </max>
+                    </serv_41300>
+                    <serv_10065>
+                        <max>
+                            <size>30</size>
+                            <sum>50</sum>
+                            <weight>0.5</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_10065>
+                    <serv_10138>
+                        <max>
+                            <size>30</size>
+                            <sum>50</sum>
+                            <weight>0.5</weight>
+                            <volume_weight>50</volume_weight>
+                        </max>
+                        <zips>
+                            <brasil>00000000,99999999</brasil>
+                        </zips>
+                    </serv_10138>
+                </validate>
+
+                <!-- CONFIG -->
+                <free_method>40010</free_method>
+                <weight_type>kg</weight_type>
+                <add_prazo>0</add_prazo>
+                <showmethod>1</showmethod>
+                <filter_by_item>0</filter_by_item>
+                <split_pack>1</split_pack>
+
+                <!-- MESSAGES -->
+                <msgprazo>%s - Em média %d dia(s)</msgprazo>
+                <correioserror>Houve um erro inesperado, por favor entre em contato. %s</correioserror>
+                <valueerror>Valor de compra fora do permitido pelos Correios. Por favor entre em contato conosco.</valueerror>
+                <zipcodeerror>Por favor, corrija o CEP digitado, ele não está correto.</zipcodeerror>
+                <weightzeroerror>Lojista: O peso do produto deverá ser maior que zero. Se você está usando a media de peso como gramas, o peso mínimo é de 10 gramas.</weightzeroerror>
+                <coderror>Lojista: Para calcular esse serviço você precisa ter contrato com os Correios.</coderror>
+                <urlerror>Esse método de envio está fora do ar. Por favor entre em contato conosco.</urlerror>
+                <dimensionerror>Dimensões dos produtos fora do permitido pelos Correios.</dimensionerror>
+            </fastshipping_correios>
+        </carriers>
+    </default>
+</config>
