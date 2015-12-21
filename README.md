@@ -24,7 +24,7 @@ Faça o pull request envie sua sugestão, faremos a análise e então o merge
 Agradecimentos especiais ao Pedro Teixeira, repositorio fortemente inspirado a sua solução dos correios para o magento.
 
 ```
-***Site:*** https://fastshipping.ciawn.com.br
+Site: https://fastshipping.ciawn.com.br
 
-***E-mail:*** fastshipping@ciawn.com.br
+E-mail: fastshipping@ciawn.com.br
 ```
